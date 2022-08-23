@@ -84,6 +84,7 @@ export default function Home() {
     try {
       await api.signOut()
       localStorage.clear()
+      window.location.reload()
     } catch (error) {
       return toast.error('Error while logging out. Try again.')
     }

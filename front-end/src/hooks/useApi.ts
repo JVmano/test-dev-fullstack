@@ -2,7 +2,7 @@ import axios from "axios";
 import { UpdateUserDTO, UserCreationDTO, UserLoginDTO } from "../types/User";
 
 const api = axios.create({
-  baseURL: 'http://localhost:3333/users',
+  baseURL: 'https://secure-wave-58660.herokuapp.com/users',
   headers: {'Content-Type': 'application/json'}
 })
 
