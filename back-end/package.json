@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "postinstall": "tsc",
     "clean": "tsc --build --clean",
     "build": "tsc --build --clean && tsc --build",
     "start": "node dist/server.js"
